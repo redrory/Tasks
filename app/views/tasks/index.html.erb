@@ -1,9 +1,18 @@
 <h1>Tasks</h1>
 
+<%= render 'form' %>
+
+
 <ul>
 
 <% for task in @tasks %>
-	<li> <%= task.task %> </li>
+	
+	<li id="task_<%= task.id%>"> 
+		
+		<%= task.task %>
+			| <%= link_to 'Edit Task', edit_task_path(task) %>
+			<%= link_to 'Delete', task, :method => 'delete' %>
+	</li>
 <% end %>
 
 

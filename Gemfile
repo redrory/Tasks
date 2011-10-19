@@ -27,6 +27,7 @@ group :test, :development do
 	gem 'guard-rspec'
 	gem 'growl_notify'
 	gem 'rb-fsevent'
+	gem 'launchy'
 
 end
 
